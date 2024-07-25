@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo_alura" src="./assets/logo_alura.png" alt="logo de alura">
+    </header>
+    <main class="contenedor">
+        <section class="contenedor_encriptador">
+            <input class="contenedor_encriptador_input" type="text" id="a_encriptar" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenedor_encriptador_advertencia">
+                <div class="contenedor_encriptador_imagenysigno">
+                    <img src="./assets/signo_de_exclamacion.png" alt="signo_de_exclamacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+            <div class="contenedor_encriptador_botones" >
+                <button class="boton1" onclick="procesarEncriptado()">Encriptar</button>
+                <button class="boton2" onclick="procesarDesencriptado()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor_codigo">
+            <div class="contenedor_codigo_resultado" id="div_parrafo">
+                <p class="parrafo_resultado" id="resultado"></p>
+            </div>
+            <div class="contenedor_imagen_texto" id="div_imagen">
+                <img class="imagen_muñeco" src="./assets/Muñeco.png" alt="Muñeco">
+                <div>
+                    <p class="contenedor_codigo_texto1">Ningún mensaje fue encontrado</p>
+                    <p class="contenedor_codigo_texto2">Ingresa el texto que desees encriptar o desencriptar</p> 
+                </div>
+            </div>
+            <div class="contenedor_boton_copy">
+                <button id="boton_copy" class="boton_copy" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>            
+    </main>
+    <script src="app.js" defer></script>
+    <footer>
+        <p>Desarrollado por Juan Funez, 2024.</p>
+    </footer>
+</body>
+
+</html>
